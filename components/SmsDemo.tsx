@@ -27,7 +27,7 @@ export const SmsDemo: React.FC = () => {
       <div className="absolute top-1/3 right-0 w-1/2 h-1/2 bg-indigo-500/20 rounded-full blur-[120px]"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           
           {/* Left Content */}
           <div>
@@ -64,26 +64,27 @@ export const SmsDemo: React.FC = () => {
           {/* Right Code Window */}
           <div className="relative group">
              {/* Window Header */}
-            <div className="bg-slate-800 rounded-t-xl border border-slate-700 p-4 flex items-center justify-between">
+            <div className="bg-slate-800 rounded-t-xl border border-slate-700 p-3 sm:p-4 flex items-center justify-between gap-2 sm:gap-4">
               <div className="flex gap-2">
-                <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
-                <div className="w-3 h-3 rounded-full bg-amber-500/80"></div>
-                <div className="w-3 h-3 rounded-full bg-emerald-500/80"></div>
+                <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-red-500/80"></div>
+                <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-amber-500/80"></div>
+                <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-emerald-500/80"></div>
               </div>
               
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-2 sm:gap-4">
                 <div className="text-xs text-slate-500 font-mono hidden sm:block">send-sms.ts</div>
                 <button 
                   onClick={handleRun}
                   disabled={isSending}
-                  className="flex items-center gap-2 px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 disabled:bg-indigo-600/50 text-white text-xs font-medium rounded-md transition-all duration-200 hover:shadow-lg hover:shadow-indigo-500/20"
+                  className="flex items-center gap-2 px-2 sm:px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 disabled:bg-indigo-600/50 text-white text-xs font-medium rounded-md transition-all duration-200 hover:shadow-lg hover:shadow-indigo-500/20 whitespace-nowrap"
                 >
                   {isSending ? (
                     <Loader2 className="w-3 h-3 animate-spin" />
                   ) : (
                     <Play className="w-3 h-3 fill-current" />
                   )}
-                  {isSending ? 'Sending...' : 'Try it Live'}
+                  <span className="hidden sm:inline">{isSending ? 'Sending...' : 'Try it Live'}</span>
+                  <span className="sm:hidden">{isSending ? '...' : 'Try'}</span>
                 </button>
               </div>
             </div>
@@ -138,7 +139,7 @@ export const SmsDemo: React.FC = () => {
             </div>
             
             {/* Phone Preview Overlay */}
-            <div className="absolute -bottom-10 -right-4 w-64 bg-white rounded-[2rem] border-[6px] border-slate-800 shadow-2xl transform rotate-3 transition-transform duration-500 group-hover:rotate-0 group-hover:scale-105 hover:!rotate-0 z-20 hidden sm:block">
+            <div className="absolute -bottom-10 -right-4 w-64 bg-white rounded-[2rem] border-[6px] border-slate-800 shadow-2xl transform rotate-3 transition-transform duration-500 group-hover:rotate-0 group-hover:scale-105 hover:!rotate-0 z-20 hidden xl:block">
                 {/* Notch */}
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-4 bg-slate-800 rounded-b-xl z-10"></div>
                 
