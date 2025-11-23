@@ -99,13 +99,13 @@ export const AiAgent: React.FC = () => {
   const chatContainerRef = useRef<HTMLDivElement>(null);
   const chatSessionRef = useRef<any>(null);
 
-  const API_KEY = "AIzaSyA40V2cRy4tlD2G1cN8iN4ruusN5V6xMc8";
 
   // Initialize Chat Session
   useEffect(() => {
     if (!process.env.API_KEY) return;
 
-    const ai = new GoogleGenAI({ apiKey: API_KEY });
+    const ai = new GoogleGenAI({ apiKey: "AIzaSyCvCFwuLUJsx_llCNRLDaUbE_N1iGI-fgY" });
+    console.log("Google GenAI Initialized:", ai);
 
     chatSessionRef.current = ai.chats.create({
       model: "gemini-2.5-flash",
