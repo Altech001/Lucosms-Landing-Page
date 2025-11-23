@@ -140,7 +140,7 @@ export const Pricing: React.FC = () => {
               <div className="space-y-4">
                 {/* Phone Card */}
                 <a 
-                  href="tel:+256772123456" 
+                  href="tel:+256 708 215 205" 
                   className="group flex items-center p-4 rounded-2xl border border-slate-200 hover:border-indigo-500 hover:shadow-lg hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-300 bg-white"
                 >
                   <div className="w-12 h-12 rounded-xl bg-indigo-600 text-white flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
@@ -156,7 +156,7 @@ export const Pricing: React.FC = () => {
 
                 {/* Email Card */}
                 <a 
-                  href="mailto:admin@lucosms.ug" 
+                  href="albertabaasa07@gmail.com" 
                   className="group flex items-center p-4 rounded-2xl border border-slate-200 hover:border-emerald-500 hover:shadow-lg hover:shadow-emerald-500/10 hover:-translate-y-1 transition-all duration-300 bg-white"
                 >
                   <div className="w-12 h-12 rounded-xl bg-emerald-500 text-white flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
@@ -164,7 +164,7 @@ export const Pricing: React.FC = () => {
                   </div>
                   <div className="ml-4">
                     <div className="text-xs font-bold text-emerald-600 uppercase tracking-wide mb-0.5">Send Email</div>
-                    <div className="text-lg font-bold text-slate-900">albertabaasa07@gmail.com</div>
+                    <div className="text-lg font-bold text-slate-900 text-overflow-ellipsis">albertabaasa07@gmail.com</div>
                     <div className="text-sm text-slate-400">Typical reply in 1 hour</div>
                   </div>
                   <ArrowRight className="w-5 h-5 ml-auto text-slate-300 group-hover:text-emerald-600 transition-colors" />
