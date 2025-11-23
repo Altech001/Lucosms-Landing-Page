@@ -30,8 +30,8 @@ WEBSITE CONTENT:
    - Enterprise: 30 UGX (Dedicated Support, SMPP, Custom SLA).
 
 3. CONTACT DETAILS:
-   - Phone: +256 772 123 456 or +256 701 987 654
-   - Email: admin@lucosms.ug
+   - Phone: +256 708 215 3505 or +256 769 030 882
+   - Email: albertabaasa07@gmail.com
    - Location: Uganda
 
 4. FEATURES:
