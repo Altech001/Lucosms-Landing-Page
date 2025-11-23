@@ -227,7 +227,7 @@ const TextHoverEffect = ({
     <div className="relative z-10 flex flex-col items-center justify-center text-center mb-12 group cursor-default select-none">
       {/* Main Text SVG */}
       <div className="relative">
-        <h1 className="text-6xl md:text-8xl lg:text-[7rem] font-bold tracking-tighter font-display text-slate-900 relative z-10 mix-blend-overlay opacity-0 group-hover:opacity-0 transition-opacity duration-500 hidden">
+        <h1 className="text-7xl md:text-8xl lg:text-[7rem] font-bold tracking-tighter font-display text-slate-900 relative z-10 mix-blend-overlay opacity-0 group-hover:opacity-0 transition-opacity duration-500 hidden">
           {/* Hidden accessible text */}
           {text}
         </h1>
@@ -283,7 +283,7 @@ const TextHoverEffect = ({
       </div>
 
       {/* Subtext / Second Line */}
-      <h2 className="text-4xl md:text-6xl lg:text-6xl font-bold tracking-tight text-slate-300 group-hover:text-slate-900 transition-colors duration-700 -mt-4 md:-mt-8 relative z-20">
+      <h2 className="text-5xl md:text-6xl lg:text-6xl font-bold tracking-tight text-slate-300 group-hover:text-slate-900 transition-colors duration-700 -mt-4 md:-mt-8 relative z-20">
         {subtext}
       </h2>
     </div>
