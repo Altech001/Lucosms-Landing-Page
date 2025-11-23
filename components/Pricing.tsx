@@ -141,15 +141,15 @@ export const Pricing: React.FC = () => {
                 {/* Phone Card */}
                 <a 
                   href="tel:+256 708 215 205" 
-                  className="group flex items-center p-4 rounded-2xl border border-slate-200 hover:border-indigo-500 hover:shadow-lg hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-300 bg-white"
+                  className="group truncate flex items-center p-4 rounded-2xl border border-slate-200 hover:border-indigo-500 hover:shadow-lg hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-300 bg-white"
                 >
                   <div className="w-12 h-12 rounded-xl bg-indigo-600 text-white flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                     <Phone className="w-6 h-6" />
                   </div>
-                  <div className="ml-4">
+                  <div className="ml-4 truncate">
                     <div className="text-xs font-bold text-indigo-600 uppercase tracking-wide mb-0.5">Call Now</div>
-                    <div className="text-lg font-bold text-slate-900">+256 708 215 205</div>
-                    <div className="text-sm text-slate-400">+256 769 030 0882</div>
+                    <div className="text-lg font-bold text-slate-900 truncate">+256 708 215 205</div>
+                    <div className="text-sm text-slate-400 truncate">+256 769 030 0882</div>
                   </div>
                   <ArrowRight className="w-5 h-5 ml-auto text-slate-300 group-hover:text-indigo-600 transition-colors" />
                 </a>
