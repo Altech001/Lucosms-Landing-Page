@@ -157,7 +157,7 @@ export const Pricing: React.FC = () => {
                 {/* Email Card */}
                 <a 
                   href="mailto:albertabaasa07@gmail.com" 
-                  className="group flex items-center p-4 rounded-2xl border border-slate-200 hover:border-emerald-500 hover:shadow-lg hover:shadow-emerald-500/10 hover:-translate-y-1 transition-all duration-300 bg-white"
+                  className="group text-overflow-hidden flex items-center p-4 rounded-2xl border border-slate-200 hover:border-emerald-500 hover:shadow-lg hover:shadow-emerald-500/10 hover:-translate-y-1 transition-all duration-300 bg-white"
                 >
                   <div className="w-12 h-12 rounded-xl bg-emerald-500 text-white flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                     <Mail className="w-6 h-6" />

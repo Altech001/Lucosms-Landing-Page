@@ -105,7 +105,7 @@ export const AiAgent: React.FC = () => {
   useEffect(() => {
     if (!process.env.API_KEY) return;
 
-    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || API_KEY });
+    const ai = new GoogleGenAI({ apiKey: API_KEY });
 
     chatSessionRef.current = ai.chats.create({
       model: "gemini-2.5-flash",
